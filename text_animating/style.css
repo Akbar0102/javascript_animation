@@ -73,7 +73,16 @@ nav img{
   font-size: 0.7rem;
   cursor: pointer;
 }
-
 .cta-btn:hover{
   background-color: rgb(250, 246, 246);
+}
+
+/* Media query untuk layar yang lebih kecil (perangkat seluler) */
+@media only screen and (max-width: 768px) {
+  .cta{
+    transform: translate(-50%, -30%);
+  }
+  .cta-text{
+    font-size: 1.2rem;
+  }
 }
