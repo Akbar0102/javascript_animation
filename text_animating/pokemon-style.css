@@ -196,3 +196,8 @@ nav img {
 .btn-close:hover {
   background-color: rgb(242, 240, 240);
 }
+.poke-title-modal {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
