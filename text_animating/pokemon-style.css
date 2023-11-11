@@ -38,12 +38,40 @@ nav img {
   justify-items: center;
 }
 
+
+@media only screen and (max-width: 1440px) {
+  #list-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 0 20px; 
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  #list-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 20px; 
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #list-container {
+    grid-template-columns: 1fr 1fr;
+    margin: 0 20px; 
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #list-container {
+    grid-template-columns: 1fr;
+    margin: 0 10px; 
+  }
+}
+
 .poke-container {
   background: linear-gradient(260deg, #9b6c50 0%, #4f2626 100%);
   display: flex;
   color: white;
-  width: 22rem;
-  height: 10rem;
+  width: 100%;
   border-radius: 1.2rem;
   padding: 1rem;
   font-family: "Poppins", sans-serif;
