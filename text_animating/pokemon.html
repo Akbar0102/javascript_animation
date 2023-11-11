@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokemon World</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./pokemon-style.css" />
+  </head>
+  <body>
+    <div class="overlay" id="loadingOverlay">
+      <div class="spinner"></div>
+    </div>
+    <div class="overlay" id="modalOverlay">
+      <div class="modal" id="modal">
+        <h2 id="modalTitle" class="poke-title"></h2>
+        <p id="modalAbilities" class="poke-type"></p>
+        <button class="btn-close" id="closeModalBtn">Close</button>
+      </div>
+    </div>
+    <nav>
+      <img src="./images/burger.svg" alt="" />
+      <a href="index.html" class="logo">Pokeworld.</a>
+      <img src="./images/pokeball.svg" alt="">
+    </nav>
+    <div id="list-container"></div>
+    <button id="btn-more">Load More</button>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"
+      integrity="sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="pokemon.js"></script>
+  </body>
+</html>

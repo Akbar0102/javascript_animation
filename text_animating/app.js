@@ -37,3 +37,9 @@ gsap.fromTo(
   { y: "100%" },
   { y: 0, delay: 2, stagger: 0.05, ease: "black.out(3)" }
 );
+
+//dom
+const btnExplore = document.getElementById("btn-explore");
+btnExplore.addEventListener("click", () => {
+  location.href='pokemon.html';
+});

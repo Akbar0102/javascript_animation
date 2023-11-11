@@ -11,14 +11,22 @@ body{
 nav{
   min-height: 10vh;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  padding: 0.5rem 15%;
+}
+
+nav img{
+  transform: scale(0.7);
 }
 
 .logo{
   font-size: 1rem;
   color: rgb(33, 33, 33);
   overflow: hidden;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: bold;
 }
 
 .hero-section{
@@ -58,8 +66,14 @@ nav{
   padding: 0.5rem 2rem;
   background: white;
   font-family: "Poppins";
+  font-weight: 500;
   border-radius: 0.3rem;
   color: rgb(33, 33, 33);
   border: none;
   font-size: 0.7rem;
+  cursor: pointer;
+}
+
+.cta-btn:hover{
+  background-color: rgb(250, 246, 246);
 }
