@@ -121,7 +121,7 @@ function generateHtml(pokemon) {
 
 const listContainer = document.getElementById("list-container");
 const btnMore = document.getElementById("btn-more");
-getAllPokemon(10, 0).then(async () => {
+getAllPokemon(12, 0).then(async () => {
   showLoading();
   for (const pokemon of listPokemon) {
     let pokeData = await getDetailPokemon(pokemon.url);
@@ -145,7 +145,7 @@ function updateLoadMoreVisibility() {
 let currentOffset = 0;
 btnMore.addEventListener("click", () => {
   showLoading();
-  const newLimit = 10;
+  const newLimit = 12;
   currentOffset += newLimit;
 
   getAllPokemon(newLimit, currentOffset).then(async () => {
